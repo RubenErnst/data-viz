@@ -102,10 +102,11 @@ combined_plot <- ca_plot_2001 + ca_plot_2018 +
 # Save
 showtext_opts(dpi = 320) 
 
-ggsave("San Francisco rent/Bay Area Rent.png",
+ggsave("San Francisco rent/Bay Area Rent.pdf",
        plot = combined_plot,
        height = 10,
        width = 10,
-       dpi=320)
+       dpi=320,
+       device = cairo_pdf)
 
 showtext_auto(FALSE)
