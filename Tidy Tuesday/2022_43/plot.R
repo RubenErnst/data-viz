@@ -53,11 +53,10 @@ plot_43
 
 showtext_opts(dpi = 320) 
 
-ggsave(filename = "Tidy Tuesday/2022_43/tidy_tuesday_2022_43.pdf",
+ggsave(filename = "Tidy Tuesday/2022_43/tidy_tuesday_2022_43.png",
        plot = plot_43,
        height = 10,
        width = 10,
-       dpi = 320,
-       device = cairo_pdf)
+       dpi = 320)
 
 showtext_auto(FALSE)
