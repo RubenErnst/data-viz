@@ -16,8 +16,9 @@ font <- "Roboto Condensed"
 font_add_google(family=font, font, db_cache = FALSE)
 showtext_auto(enable = TRUE) 
 theme_set(theme_minimal(base_family = font))
-bg <- "#4d482b" # "#312e1b"
-txt_col <- "#e4f3e0"
+txt_col <- "#312e1b"
+label_col <- "#e4f3e0"
+bg <- "#b0bf8f" # "#e2ebce"
 
 btbr_theme <- c("#eaa480", "#eb9173", "#de7f5f", "#d46248", "#c65237", "#ac2c13", "#94301e", "#881c08", "#671006", "#4c0d06", "#17120d")
 
@@ -68,7 +69,7 @@ plot_44 <- horror_network %>%
   geom_edges(aes(alpha = weight), size = 1.6, color = btbr_theme[11]) +
   scale_size_continuous(range = c(5, 50)) +
   geom_nodes(aes(color = label, size = degree_w)) +
-  geom_text(aes(label = label), family = font, color = txt_col, size = 4) +
+  geom_text(aes(label = label), family = font, color = label_col, size = 4) +
   scale_fill_manual(values = c("Action" = btbr_theme[1],
                                "Animation" = btbr_theme[2],
                                "Comedy" = btbr_theme[3],
@@ -107,6 +108,8 @@ plot_44 <- horror_network %>%
         plot.title.position = "panel",
         legend.position = "none",
         plot.margin = margin(50, 50, 50, 50))
+
+plot_44
 
 # Save
 showtext_opts(dpi = 320) 
