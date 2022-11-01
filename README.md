@@ -1,6 +1,11 @@
 # data-viz
 Various data visualizations
 
+### Tidy Tuesday 2022 Week 44: Horror Movies:
+Data by: Tanya Shapiro. Retrieved from [here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-11-01)
+
+![](https://github.com/RubenErnst/data-viz/blob/main/Tidy%20Tuesday/2022_44/tidy_tuesday_2022_44.png)
+
 ### Tidy Tuesday 2022 Week 43: Great British Bake Off:
 Data by: Alison Hill, Chester Ismay, and Richard Iannone. Retrieved from [here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2022/2022-10-25)
 
